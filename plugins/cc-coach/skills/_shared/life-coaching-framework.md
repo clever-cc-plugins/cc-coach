@@ -82,3 +82,134 @@ Parkinson's observation on task expansion). The underlying techniques and named
 effects are not copyrightable; the specific prose and case examples in those books
 are. This section reformulates the operational essence as coaching guidance for
 the Will stage — it does not reproduce or paraphrase passages from either book.
+
+## When Perfect Organization Isn't the Answer
+
+**A counterbalance to offer when the person's real problem is over-organizing**
+
+Not every follow-through problem is a discipline gap the tools above can fix.
+Some people's Reality-stage account describes the opposite: real cost sunk into
+systems, schedules, and tidying that isn't paying off, or anxiety about
+messiness that isn't actually causing any concrete problem. Offer this as an
+Option in that case, not as a replacement for the tools above — the two are
+different diagnoses for different situations.
+
+**Neatness has a cost too, and it's usually invisible.** Time spent organizing,
+filing, and maintaining rigid schedules is a real cost that rarely gets weighed
+against its actual benefit. When a person feels vaguely guilty about a messy
+desk, an unscheduled week, or a loose system, ask directly: is the mess actually
+causing a problem, or is it just violating an assumption that neater is always
+better?
+
+**Find the optimal level by experimenting in one dimension at a time, not by
+assuming more order is always the fix.** Loosen one specific system slightly
+(a looser schedule, a "good enough" filing approach, less advance planning) and
+check whether outcomes improve, stay flat, or get worse — then adjust from
+there. Some domains genuinely need tight order (anything safety- or
+money-critical); most personal systems have a sweet spot well short of maximal
+organization, and it's found by testing, not by assuming.
+
+**Source attribution:** the concept in this section (the often-invisible cost
+of neatness, and finding an optimal — not maximal — level of order by
+experimentation) is drawn from Eric Abrahamson and David H. Freedman's _A
+Perfect Mess: The Hidden Benefits of Disorder_. The underlying concept is not
+copyrightable; the book's specific prose and case examples are. This section
+reformulates the operational essence as coaching guidance — it does not
+reproduce or paraphrase passages from the book.
+
+## Building Endurance for a Sustained Challenge
+
+**A resilience framework for when the Will-stage commitment is a long haul, not
+a single next action**
+
+The tools above strengthen a single commitment. Some goals — a career pivot, a
+fitness transformation, recovering from a major setback — need sustained
+willpower over months, not a well-formed next action. Offer this framework when
+the person's Goal is this kind of extended challenge, not a discrete task.
+
+Four stages, worked in order across a longer engagement (not one sitting):
+
+1. **Focus** — before anything else, the person needs clarity and calm: what do
+   they actually want, who are they (not who they think they should be), and
+   what specific challenge will stretch them without overwhelming them. Rushing
+   past this stage to "just start" is the most common failure mode.
+2. **Agility** — build a concrete, personalized plan; anticipate the specific
+   obstacles and distractions likely to appear rather than treating them as
+   unexpected derailments when they arrive; keep the plan flexible enough to
+   adapt as conditions change rather than treating the first plan as fixed.
+3. **Coordination** — align the challenge with what the person actually cares
+   about (not just what looks impressive); use the people and environment
+   around them deliberately rather than leaving that to chance; keep learning
+   as the challenge unfolds rather than assuming the starting plan has all the
+   answers.
+4. **Endurance** — build the actual discipline and habits that carry the
+   commitment past the point where initial motivation fades; treat setbacks as
+   information rather than proof of failure; have a concrete answer for "how do
+   I keep going" before motivation is the only thing carrying the plan.
+
+How to apply: ask which of the four stages the person is actually stuck in —
+most long-haul commitments don't fail from lack of endurance alone; they fail
+because Focus was skipped (the goal was never actually clear) or Agility was
+skipped (no real plan, no anticipated obstacles). Diagnose the stage before
+offering advice aimed at a different one.
+
+**Source attribution:** the Focus/Agility/Coordination/Endurance structure in
+this section is drawn from Wladimir Klitschko and Tatjana Kiel's _F.A.C.E. the
+Challenge_. The underlying framework and stage names are not copyrightable; the
+book's specific prose, examples, and personal stories are. This section
+reformulates the operational essence as coaching guidance — it does not
+reproduce or paraphrase passages from the book.
+
+## Working With, Not Against, Perfectionism
+
+**A domain to recognize when perfectionism itself is the thing blocking the
+Will stage**
+
+Perfectionism often shows up disguised as a different problem — procrastination,
+inability to commit to a Will-stage action, an anxious insistence that a plan
+isn't ready yet. When the Reality stage suggests perfectionism is the actual
+mechanism, naming it directly is more useful than continuing to push on the
+symptom.
+
+**Perfectionism isn't inherently the problem — the maladaptive form is.**
+Adaptive perfectionism (high standards that drive engagement and satisfaction)
+and maladaptive perfectionism (standards that produce shame, self-criticism,
+and avoidance) are different things, not points on a "how perfectionist are
+you" scale to minimize. The coaching goal is shifting toward the adaptive form,
+not eliminating high standards.
+
+**Five recognizable patterns**, each with a strength and a "left unchecked"
+failure mode — offer the type as a hypothesis, not a diagnosis, and let the
+person confirm or correct it:
+
+- **Classic** — reliable, consistent, detail-oriented; unchecked, struggles
+  with spontaneity or a change in routine.
+- **Intense** — direct, sharply focused on the goal; unchecked, standards creep
+  from high to impossible, and self- or other-criticism gets punitive.
+- **Parisian** — strong empathy and interpersonal read; unchecked, tips into
+  people-pleasing.
+- **Procrastinator** — excellent at seeing a situation from every angle before
+  acting; unchecked, that preparation never resolves into action.
+- **Messy** — full of ideas, adapts to spontaneity easily; unchecked, energy
+  spreads too thin to finish what was started.
+
+How to apply: when a Will-stage commitment keeps stalling, ask what specifically
+feels unfinished or unsafe about committing — the answer usually points to one
+of the five patterns above, which in turn points to a different Options-stage
+fix (a Procrastinator pattern needs a forced smaller first step; a Parisian
+pattern needs permission to disappoint someone; an Intense pattern needs the
+standard itself named and questioned).
+
+**Boundary — this is coaching, not treatment.** If what surfaces sounds like
+more than a perfectionism pattern — persistent low mood, hopelessness, or
+anything suggesting self-harm — say so directly and point the person to
+professional support rather than continuing to coach through it. This framework
+is for a behavior pattern that's blocking follow-through, not a mental-health
+condition.
+
+**Source attribution:** the five-type framework and the adaptive/maladaptive
+distinction in this section are drawn from Katherine Morgan Schafler's _The
+Perfectionist's Guide to Losing Control_. The underlying framework and concepts
+are not copyrightable; the book's specific prose, client stories, and case
+examples are. This section reformulates the operational essence as coaching
+guidance — it does not reproduce or paraphrase passages from the book.

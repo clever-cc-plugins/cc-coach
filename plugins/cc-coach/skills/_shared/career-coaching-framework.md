@@ -111,3 +111,56 @@ techniques and named concepts are not copyrightable; the specific prose, stories
 and case examples in those books are. This section reformulates the operational
 essence as coaching guidance — it does not reproduce or paraphrase passages from
 any of them.
+
+## Live Rapport-Building for the Options Stage
+
+**How the person actually behaves in the room, once a networking Option becomes
+a real conversation**
+
+The networking section above covers _what_ to do — who to reach out to and how
+to open the relationship. This section is about _how the person shows up_ once
+they're actually talking to someone, whether that's the coffee meeting from the
+one-on-one mindset above or any other live conversation the Options stage
+produced.
+
+- **Genuine interest before being interesting.** Asking real questions about
+  the other person and listening to the answers builds more goodwill than any
+  amount of being impressive. Coach toward this directly when the person's plan
+  for a meeting is mostly about what they'll say about themselves.
+- **Use the other person's name.** Small, concrete, and reliably underused —
+  a person's name, used naturally in conversation, registers as attention paid.
+- **Talk in terms of the other person's interests.** Before a meeting, the
+  person should be able to answer: what does the other person care about, and
+  where does that overlap with what I bring? A meeting planned only around the
+  asker's own agenda undersells the connection.
+- **Let the other person feel genuinely important — and mean it.** This fails
+  immediately if it reads as technique; the underlying move is finding what's
+  actually admirable or interesting about the other person and saying so
+  specifically, not generic flattery.
+- **Avoid direct criticism or argument in a relationship-building conversation.**
+  Even when the person disagrees with something the other party says, a
+  networking conversation is rarely the place to win the point — coach toward
+  finding the part they can genuinely agree with first.
+
+How to apply: when the person's Reality-stage account of a past networking
+attempt describes it going flat or feeling one-sided, check it against this
+list — usually the gap is one of "talked mostly about myself" or "didn't ask a
+real question and listen to the answer," not a lack of opportunities.
+
+**Source attribution:** the concepts in this section (genuine interest, using
+names, framing around the other person's interests, sincere appreciation,
+avoiding direct criticism) are drawn from Dale Carnegie's _How to Win Friends
+and Influence People_ (read here in its German edition, _Wie man Freunde
+gewinnt_). The underlying techniques are not copyrightable; the book's specific
+prose and stories are. This section reformulates the operational essence for a
+live coaching conversation — distinct from `cc-content`'s
+`persuasion-principles.md`, which adapts a subset of the same tradition for
+written content — and does not reproduce or paraphrase passages from the book.
+
+## When the Goal Is a Long Haul, Not a Single Action
+
+If the person's Goal is an extended challenge (a career pivot, a promotion push
+spanning many months, rebuilding after a setback) rather than a discrete next
+action, use `life-coaching-framework.md`'s **Building Endurance for a Sustained
+Challenge** section (the Focus/Agility/Coordination/Endurance framework) instead
+of trying to force it into a single Will-stage commitment.
