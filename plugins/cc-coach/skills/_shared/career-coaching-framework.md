@@ -34,3 +34,80 @@ How to apply:
 When a `personal-branding-strategy` context file is loaded and the goal touches
 visibility or positioning, reference its Why/How/What and key themes directly in the
 Reality and Options stages rather than asking the person to restate their brand.
+
+## Networking as a GROW Options-Stage Domain
+
+**What to offer when the Options stage touches building relationships**
+
+Networking comes up constantly in career GROW sessions — a job search, a
+promotion push, finding a mentor, breaking into a new field. Offer these as
+Options-stage suggestions, never as a fixed curriculum to march through — the
+person still generates their own options first.
+
+**Give first, don't keep score.** The single most load-bearing habit across this
+domain: lead every relationship with something offered, not something asked for.
+A person who reaches out only when they need something reads as transactional
+even when they don't mean to. When the person's Option is "ask X for help," check
+whether they have something to offer X first — even a small one (a relevant
+article, an introduction, genuine interest in X's own work).
+
+**Relationship Action Plan.** A concrete Will-stage tool: (1) name a goal 1-3
+months out, (2) list specific people — not categories, actual names — who could
+help reach it, (3) for each name, decide the outreach medium and, critically, what
+to lead with generously rather than what to ask for. Offer this when the person's
+Will-stage commitment is vague ("I'll network more") — it converts a vague
+intention into named people and a specific next action per person.
+
+**Anchor connectors.** In any group or event the person is already part of (a
+team, an alumni group, a recurring meetup), there's usually one person who
+connects to many _other_ circles the person doesn't have access to — identifiable
+by noticing whose name keeps coming up in others' stories. Cultivating that one
+relationship (not the whole room) often opens more doors than broad, shallow
+outreach. Useful when the Option on the table is "attend more networking events"
+— ask who at events they've already attended stood out this way, before adding a
+new event to the plan.
+
+**Light, regular touchpoints ("pinging").** Sustaining a network doesn't require
+big asks — a short, genuine check-in (sharing something relevant to that person,
+congratulating a visible win) keeps a relationship warm without demanding their
+time. Offer this when the person has a list of contacts they've "lost touch with"
+and the Will-stage action risks being an awkward, oversized re-introduction —
+a small touchpoint is a lower-friction first step.
+
+**Contacts are not relationships.** A name in an address book or a LinkedIn
+connection is a contact; a relationship exists only where real time has been
+invested. If the person's Reality-stage account of their network is a long
+contact list but few people they could actually call for help, name that gap
+directly — the Options stage should prioritize deepening a few relationships over
+adding more contacts.
+
+**For an introvert-identified person — offer the one-on-one mindset explicitly,
+don't default to group-networking advice:**
+
+1. Name specific people 1-2 levels above or adjacent to the person's role they'd
+   like to know better — not a room full of strangers.
+2. Ask each one separately for a short one-on-one (a "quick coffee" or its remote
+   equivalent) rather than a group setting.
+3. Prepare one genuine question or a real reason for the meeting before it happens
+   ("I'm intrigued by X, would love your take").
+4. Ask directly: "How can I be of help to you?" — and have a ready answer for when
+   they ask it back.
+5. Follow up with a specific, personal thank-you, not a generic one.
+6. Budget explicit recovery time after any high-exposure networking event or
+   interview day — treat it as a real cost, not a discipline failure, and plan
+   around it rather than pushing through it.
+
+This isn't a lesser version of group networking — for a person who finds group
+settings draining, it's the higher-yield version, because deep one-on-one
+relationships are where introverts are most effective. Never frame it as a
+consolation path to the "real" (extroverted) way of networking.
+
+**Source attribution:** the concepts in this section (give-first/don't-keep-score,
+Relationship Action Plan, anchor connectors, pinging, contacts-vs-relationships,
+the one-on-one mindset for introverts) are drawn from Keith Ferrazzi's _Never Eat
+Alone_, Alexander Wolf's _Networking – Dictyonomie_, and Lisa Petrilli's _The
+Introvert's Guide to Success in Business and Leadership_. The underlying
+techniques and named concepts are not copyrightable; the specific prose, stories,
+and case examples in those books are. This section reformulates the operational
+essence as coaching guidance — it does not reproduce or paraphrase passages from
+any of them.
