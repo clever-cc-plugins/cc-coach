@@ -26,10 +26,13 @@ this skill; skip straight to session framing.
 ## Step 2: Session framing
 
 State in one line what this session will do, since there's no personalized/generic
-distinction to make here:
+distinction to make here, and name the scope boundary up front rather than only
+when something sensitive surfaces:
 
 > "This is a Wheel-of-Life-plus-GROW session — we'll find where to focus, then work
-> that into a committed action."
+> that into a committed action. This is coaching, not therapy — if something
+> heavier comes up, I'll say so and point you toward better support rather than
+> trying to coach through it."
 
 ## Step 3: Coaching conversation
 
@@ -38,6 +41,10 @@ Life and go straight to GROW on that focus, per
 `../_shared/life-coaching-framework.md`'s guidance. Otherwise, run the Wheel of Life
 first to find where attention is actually needed, then move into GROW on the chosen
 domain. Ask one question at a time; wait for the answer before the next.
+
+Apply the Scope and Safety Boundary from the shared framework throughout, not just
+when the perfectionism material happens to come up — it's a whole-conversation
+check, not a topic-specific one.
 
 ## Step 4: Delimited reply
 
