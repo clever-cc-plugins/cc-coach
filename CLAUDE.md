@@ -16,6 +16,9 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 | `CLAUDE.md`                                           | Project instructions, loaded every message                                                   |
 | `.claude/settings.json`                               | Permissions, hooks, environment variables                                                    |
 | `.githooks/pre-commit`                                | Secret scanning (gitleaks) + CLAUDE.md table sync                                            |
+| `.github/workflows/claude-code-review.yml`            | TODO: add description                                                                        |
+| `.github/workflows/claude.yml`                        | TODO: add description                                                                        |
+| `.github/workflows/release.yml`                       | TODO: add description                                                                        |
 | `.gitignore`                                          | Git ignore patterns                                                                          |
 | `plugins/cc-coach/.claude-plugin/plugin.json`         | Plugin manifest                                                                              |
 | `plugins/cc-coach/skills/career-coach/SKILL.md`       | Skill: Live GROW-model coaching conversation on career questions                             |
