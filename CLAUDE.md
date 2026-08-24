@@ -3,7 +3,7 @@
 A Claude Code plugin bundling live-coaching skills across job-related and
 personal-life domains.
 
-Status: v1 skills implemented, not yet registered in the marketplace catalog. See
+Status: v1 skills implemented and registered in the marketplace catalog. See
 `docs/superpowers/specs/2026-08-18-cc-coach-design.md` for the design.
 
 ## Key Config Files
