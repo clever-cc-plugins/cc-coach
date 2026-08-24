@@ -17,14 +17,15 @@ A [Claude Code](https://claude.ai/code) plugin bundling live-coaching skills acr
 
 Every coaching skill works standalone with a generic, domain-general framework — no sibling plugin required. If your project has a matching context file registered (e.g. `career-plan.md` from `cc-career`), the skill reads it and coaches against that specific plan instead.
 
-| Skill                          | What it does                                                                                                                                              |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/cc-coach:career-coach`       | Live GROW-model coaching conversation on a career question or decision — coaches against your `cc-career` plan when one is registered, generic otherwise  |
-| `/cc-coach:life-coach`         | Live coaching on personal, non-job-related goals — habits, work-life balance, relationships, general life direction                                       |
-| `/cc-coach:networking-coach`   | Live coaching on building and maintaining personal networks — starting conversations, overcoming social anxiety, deepening ties                           |
-| `/cc-coach:presentation-coach` | Live coaching on talks, webinars, and presentations — outline through rehearsal feedback, using a rubric plus SBI feedback                                |
-| `/cc-coach:research-prompt`    | Generates a vendor-neutral deep-research prompt for a coaching domain or methodology, ready to paste into Claude, ChatGPT, Gemini, Perplexity, or similar |
-| `/cc-coach:new-coaching-skill` | Builds a new coaching skill for a specific domain from research notes                                                                                     |
+| Skill                          | What it does                                                                                                                                                                                                                      |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/cc-coach:career-coach`       | Live GROW-model coaching conversation on a career question or decision — coaches against your `cc-career` plan when one is registered, generic otherwise                                                                          |
+| `/cc-coach:life-coach`         | Live coaching on personal, non-job-related goals — habits, work-life balance, relationships, general life direction                                                                                                               |
+| `/cc-coach:networking-coach`   | Live coaching on building and maintaining personal networks — starting conversations, overcoming social anxiety, deepening ties                                                                                                   |
+| `/cc-coach:presentation-coach` | Live coaching on talks, webinars, and presentations — outline through rehearsal feedback, using a rubric plus SBI feedback                                                                                                        |
+| `/cc-coach:productivity-coach` | Live coaching on personal productivity — task overwhelm, procrastination, focus, and habit-building — evidence-first, correcting popular productivity-book myths (GTD, The 4-Hour Work Week, A Perfect Mess) against the research |
+| `/cc-coach:research-prompt`    | Generates a vendor-neutral deep-research prompt for a coaching domain or methodology, ready to paste into Claude, ChatGPT, Gemini, Perplexity, or similar                                                                         |
+| `/cc-coach:new-coaching-skill` | Builds a new coaching skill for a specific domain from research notes                                                                                                                                                             |
 
 ---
 

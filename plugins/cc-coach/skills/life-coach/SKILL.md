@@ -59,6 +59,19 @@ tactical networking question is resolved, return to the Wheel-of-Life-plus-GROW
 framework to keep the session moving toward commitment. The hand-off can happen more
 than once if operational networking questions resurface.
 
+## Step 3b: Productivity hand-off (when applicable)
+
+When the conversation turns operational/tactical on personal productivity specifically —
+task overwhelm, procrastination on a specific action, focus and attention, or habit-building
+mechanics — not before, and not for productivity framed only as a general goal (e.g. "get my
+life more together") — pause and say: "This is productivity-coach's territory — let's bring
+that expertise in for this part." Then read `../productivity-coach/coaching-framework.md`
+and apply its frameworks (implementation intentions, capture-and-plan, task batching,
+habit formation and environment design) for that portion of the conversation. Once the
+tactical productivity question is resolved, return to the Wheel-of-Life-plus-GROW framework
+to keep the session moving toward commitment. The hand-off can happen more than once if
+operational productivity questions resurface.
+
 ## Step 4: Delimited reply
 
 Wrap every substantive reply per the contract's delimiter format, with a topic
