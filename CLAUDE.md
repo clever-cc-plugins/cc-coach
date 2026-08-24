@@ -8,23 +8,23 @@ Status: v1 skills implemented, not yet registered in the marketplace catalog. Se
 
 ## Key Config Files
 
-| File                                                  | Purpose                                                                     |
-| ----------------------------------------------------- | --------------------------------------------------------------------------- |
-| `.claude/format-markdown.sh`                          | PostToolUse hook: formats Markdown files with prettier after edits          |
-| `.claude/guard-secret-files.sh`                       | PreToolUse hook: blocks reads/edits/writes of secret .env files             |
-| `.claudeignore`                                       | Paths excluded from Claude Code indexing                                    |
-| `CLAUDE.md`                                           | Project instructions, loaded every message                                  |
-| `.claude/settings.json`                               | Permissions, hooks, environment variables                                   |
-| `.githooks/pre-commit`                                | Secret scanning (gitleaks) + CLAUDE.md table sync                           |
-| `.gitignore`                                          | Git ignore patterns                                                         |
-| `plugins/cc-coach/.claude-plugin/plugin.json`         | Plugin manifest                                                             |
-| `plugins/cc-coach/skills/career-coach/SKILL.md`       | Skill: Live GROW-model coaching conversation on career questions            |
-| `plugins/cc-coach/skills/life-coach/SKILL.md`         | Skill: Live coaching on personal, non-job-related goals                     |
-| `plugins/cc-coach/skills/networking-coach/SKILL.md`   | TODO: add description                                                       |
-| `plugins/cc-coach/skills/new-coaching-skill/SKILL.md` | Skill: Build a new coaching skill from research                             |
-| `plugins/cc-coach/skills/presentation-coach/SKILL.md` | Skill: Live coaching on talks/webinars using a rubric + SBI feedback        |
-| `plugins/cc-coach/skills/research-prompt/SKILL.md`    | Skill: Generate a vendor-neutral deep-research prompt for a coaching domain |
-| `scripts/sync-config-table.sh`                        | Keeps Key Config Files table in sync on each commit                         |
+| File                                                  | Purpose                                                                                      |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `.claude/format-markdown.sh`                          | PostToolUse hook: formats Markdown files with prettier after edits                           |
+| `.claude/guard-secret-files.sh`                       | PreToolUse hook: blocks reads/edits/writes of secret .env files                              |
+| `.claudeignore`                                       | Paths excluded from Claude Code indexing                                                     |
+| `CLAUDE.md`                                           | Project instructions, loaded every message                                                   |
+| `.claude/settings.json`                               | Permissions, hooks, environment variables                                                    |
+| `.githooks/pre-commit`                                | Secret scanning (gitleaks) + CLAUDE.md table sync                                            |
+| `.gitignore`                                          | Git ignore patterns                                                                          |
+| `plugins/cc-coach/.claude-plugin/plugin.json`         | Plugin manifest                                                                              |
+| `plugins/cc-coach/skills/career-coach/SKILL.md`       | Skill: Live GROW-model coaching conversation on career questions                             |
+| `plugins/cc-coach/skills/life-coach/SKILL.md`         | Skill: Live coaching on personal, non-job-related goals                                      |
+| `plugins/cc-coach/skills/networking-coach/SKILL.md`   | Skill: Live coaching on building/maintaining networks; hand-off target for career/life coach |
+| `plugins/cc-coach/skills/new-coaching-skill/SKILL.md` | Skill: Build a new coaching skill from research                                              |
+| `plugins/cc-coach/skills/presentation-coach/SKILL.md` | Skill: Live coaching on talks/webinars using a rubric + SBI feedback                         |
+| `plugins/cc-coach/skills/research-prompt/SKILL.md`    | Skill: Generate a vendor-neutral deep-research prompt for a coaching domain                  |
+| `scripts/sync-config-table.sh`                        | Keeps Key Config Files table in sync on each commit                                          |
 
 ## References
 
