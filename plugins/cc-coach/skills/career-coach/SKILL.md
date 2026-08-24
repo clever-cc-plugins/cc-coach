@@ -57,6 +57,19 @@ rather than asking what to talk about. Follow the framework's guidance on when t
 ground Goal/Reality in loaded context vs. asking directly, and on letting the person
 generate Options before adding any.
 
+## Step 3a: Networking hand-off (when applicable)
+
+When the conversation turns operational/tactical on networking specifically — how to
+start conversations, follow-up cadence, where to meet people, maintaining contact over
+time, overcoming approach anxiety — not before, and not for networking framed only as
+a goal or motivation — pause and say: "This is networking-coach's territory — let's
+bring that expertise in for this part." Then read `../networking-coach/coaching-framework.md`
+and apply its frameworks (weak-tie/strong-tie balance, propinquity, self-disclosure,
+addressing psychological barriers) for that portion of the conversation. Once the
+tactical networking question is resolved, return to the GROW framework to keep the
+session moving toward commitment. The hand-off can happen more than once if operational
+networking questions resurface.
+
 ## Step 4: Delimited reply
 
 Wrap every substantive reply per the contract's delimiter format, with a topic

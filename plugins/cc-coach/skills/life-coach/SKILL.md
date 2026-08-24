@@ -46,6 +46,19 @@ Apply the Scope and Safety Boundary from the shared framework throughout, not ju
 when the perfectionism material happens to come up — it's a whole-conversation
 check, not a topic-specific one.
 
+## Step 3a: Networking hand-off (when applicable)
+
+When the conversation turns operational/tactical on networking specifically — how to
+start conversations, follow-up cadence, where to meet people, maintaining contact over
+time, overcoming approach anxiety — not before, and not for networking framed only as
+a goal or motivation — pause and say: "This is networking-coach's territory — let's
+bring that expertise in for this part." Then read `../networking-coach/coaching-framework.md`
+and apply its frameworks (weak-tie/strong-tie balance, propinquity, self-disclosure,
+addressing psychological barriers) for that portion of the conversation. Once the
+tactical networking question is resolved, return to the Wheel-of-Life-plus-GROW
+framework to keep the session moving toward commitment. The hand-off can happen more
+than once if operational networking questions resurface.
+
 ## Step 4: Delimited reply
 
 Wrap every substantive reply per the contract's delimiter format, with a topic

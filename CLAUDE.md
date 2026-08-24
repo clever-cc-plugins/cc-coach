@@ -20,6 +20,7 @@ Status: v1 skills implemented, not yet registered in the marketplace catalog. Se
 | `plugins/cc-coach/.claude-plugin/plugin.json`         | Plugin manifest                                                             |
 | `plugins/cc-coach/skills/career-coach/SKILL.md`       | Skill: Live GROW-model coaching conversation on career questions            |
 | `plugins/cc-coach/skills/life-coach/SKILL.md`         | Skill: Live coaching on personal, non-job-related goals                     |
+| `plugins/cc-coach/skills/networking-coach/SKILL.md`   | TODO: add description                                                       |
 | `plugins/cc-coach/skills/new-coaching-skill/SKILL.md` | Skill: Build a new coaching skill from research                             |
 | `plugins/cc-coach/skills/presentation-coach/SKILL.md` | Skill: Live coaching on talks/webinars using a rubric + SBI feedback        |
 | `plugins/cc-coach/skills/research-prompt/SKILL.md`    | Skill: Generate a vendor-neutral deep-research prompt for a coaching domain |
