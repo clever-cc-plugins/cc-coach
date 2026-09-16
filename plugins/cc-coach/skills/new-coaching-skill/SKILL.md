@@ -136,20 +136,28 @@ folder:
 mkdir -p plugins/cc-coach/skills/<domain-name>
 ```
 
-Write `coaching-framework.md` to:
+**Draft first, for quality.** Synthesize `coaching-framework.md` from the research
+files, optimizing purely for a clear, well-organized coaching framework — don't
+divide attention with formatting rules yet. Base every claim on the research files;
+use knowledge-based synthesis only for user-approved gaps.
+
+**Then verify the draft against these non-negotiables, and fix every violation
+before writing the file:**
+
+- Per named framework: a short "What it is" paragraph, a "Best for" / "Avoid" pair,
+  and a numbered "How to apply" sequence — the same shape as
+  `career-coaching-framework.md` and `presentation-coaching-framework.md` in this
+  plugin.
+- A **Common Pitfalls** section listing domain-specific anti-patterns from the
+  research.
+- Every user-approved-gap section is marked
+  `⚠ KNOWLEDGE-BASED — verify before treating this skill as production-ready`, and
+  no other section carries that mark.
+
+Write the checked file to:
 
 - **End-user mode:** `.claude/skills/<domain-name>/coaching-framework.md`
 - **Plugin-dev mode:** `plugins/cc-coach/skills/<domain-name>/coaching-framework.md`
-
-Base every claim on the research files; use knowledge-based synthesis only for
-user-approved gaps, and mark those sections with
-`⚠ KNOWLEDGE-BASED — verify before treating this skill as production-ready`.
-
-The file must include, per named framework: a short "What it is" paragraph, a "Best
-for" / "Avoid" pair, and a numbered "How to apply" sequence — the same shape as
-`career-coaching-framework.md` and `presentation-coaching-framework.md` in this
-plugin. Follow with a **Common Pitfalls** section listing domain-specific
-anti-patterns from the research.
 
 Confirm when written:
 
@@ -158,7 +166,11 @@ Confirm when written:
 
 ## Step 5: Generate SKILL.md skeleton
 
-Write the `SKILL.md` to:
+**Draft first, for quality.** Write the frontmatter and body content below,
+optimizing for a clear, natural description and well-sequenced steps that read like
+the rest of this plugin's skills.
+
+Target path:
 
 - **End-user mode:** `.claude/skills/<domain-name>/SKILL.md`
 - **Plugin-dev mode:** `plugins/cc-coach/skills/<domain-name>/SKILL.md`
@@ -216,6 +228,23 @@ Required skill steps — write each as a level-2 heading, following the shape of
   directly, with tag `[cc-coach:<domain-name>]` and
   `context/<domain-name>-session-<YYYY-MM-DD>.md`, plus two example learnings
   entries specific to this domain.
+
+**Then verify the draft against these non-negotiables, and fix every violation
+before writing the file:**
+
+- `name:` field is bare `<domain-name>` — never repeats the `cc-coach-` prefix.
+- The required @-import line is present, with the mode-correct path.
+- The shared-contract reference line is present, verbatim (relative path adjusted
+  for end-user mode).
+- All five required step headings are present, in order, in the shape above.
+- Trigger phrases follow the mode rule exactly: `[TODO: ...]` placeholder in
+  end-user mode, 3-5 concrete phrases in plugin-dev mode — never the wrong one for
+  the mode.
+
+Write the checked file to:
+
+- **End-user mode:** `.claude/skills/<domain-name>/SKILL.md`
+- **Plugin-dev mode:** `plugins/cc-coach/skills/<domain-name>/SKILL.md`
 
 Confirm when written:
 
