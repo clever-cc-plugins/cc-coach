@@ -5,9 +5,7 @@
   </picture>
 </p>
 
-<img src="assets/icon.svg" align="right" width="96" height="96" alt="cc-coach icon" />
-
-# cc-coach
+# <img src="assets/icon.svg" width="40" height="40" align="top" alt="" />&nbsp;cc-coach
 
 A [Claude Code](https://claude.ai/code) plugin bundling live-coaching skills across job-related and personal-life domains.
 
