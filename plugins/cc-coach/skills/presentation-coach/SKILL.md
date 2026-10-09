@@ -134,7 +134,7 @@ as open.
 When it runs:
 
 - **Coaching** — once a drafted talk or deck has been through Message Clarity,
-  Structure, and Evidence, and as part of every "review my deck". Present the
+  Structure, Evidence, and Audience fit, and as part of every "review my deck". Present the
   kept objections in one turn as a short table (objection in the recipient's
   words, who holds it, proposed placement); this is the one place a coaching
   reply lists several points. Then work through them one at a time like any
