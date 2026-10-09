@@ -55,6 +55,8 @@ rubric alone doesn't cover.
 
 Work through the rubric in this order — message clarity first, since a
 structural or delivery fix on an unclear message just polishes the wrong thing.
+Once Evidence and Audience fit have a concrete draft to work on, follow them
+with the Objection Pre-mortem below.
 
 **A caveat worth naming for webinars specifically:** delivery techniques that
 lean on presence and charisma (illustrative gestures, vocal variety, moral
@@ -321,3 +323,95 @@ Cialdini books are. This section reformulates the operational essence for
 live, spoken delivery — it does not reproduce or paraphrase passages from
 either book, and states the confidence/argument-strength finding directly
 rather than paraphrasing any single paper's narrative.
+
+## Objection Pre-mortem (Devil's Advocate Pass)
+
+**Finding the audience's "yes, but" before they say it — and deciding where in
+the talk each answer belongs**
+
+A talk that ignores the objections its audience is already forming loses them
+silently: people stop listening and start rehearsing their counterargument. This
+pass reviews a talk the way its most skeptical recipients will, then decides,
+objection by objection, how the talk meets each one in advance. It runs after the
+rubric's Evidence and Audience-fit passes have something concrete to work on —
+a drafted talk or a deck, not a bare topic.
+
+**1. Name the recipients, not "the audience."** Objections belong to people with
+a stake: the decision-maker, the budget owner, the skeptical expert, the team
+whose work changes, the competitor's champion in the room. Use what the session
+already established about the audience; if nothing is known about who decides or
+who is affected, that is the one question to ask before running the pass.
+
+**2. Generate objections from a failure that has already happened.** Don't ask
+"what could go wrong?" — ask "the talk is over, they said no (or nodded and did
+nothing): what did the skeptic say on the way out?" Imagining the outcome as
+certain produces more and more specific reasons than open-ended speculation. Walk
+the typical categories so none is skipped:
+
+- **Relevance** — why this, why us, why now?
+- **Evidence** — where does that number come from, does it hold for our case?
+- **Cost, risk, effort** — what does it take, what breaks, who pays?
+- **Feasibility** — can we actually do this with the people and time we have?
+- **Alternatives** — why not option X, or doing nothing?
+- **Credibility** — why should we believe this speaker or source on this?
+- **Unspoken stakes** — whose turf, budget, or past decision does this threaten?
+  Rarely voiced in the room, often decisive afterwards.
+
+**3. Steelman each one.** Phrase every objection the way its smartest holder
+would, in their words. A strawman answered on a slide convinces nobody who holds
+the real version — and insults them.
+
+**4. Triage.** Rate each objection by how many recipients hold it and how much
+damage it does if left unanswered. Keep the top three to five; list the rest as
+Q&A prep. A talk that answers twelve objections has stopped making its own case.
+
+**5. Choose a placement for every kept objection:**
+
+- **Pre-empt in the talk** — name the objection and answer it, on a slide or as a
+  spoken line ("You're probably thinking this costs more than it saves. Here's
+  the 12-month view."). Reserve this for objections most of the room holds.
+- **Speaker notes** — a prepared line for an objection only part of the room
+  holds; said if the moment calls for it.
+- **Backup slide** — the detailed answer (data, comparison, risk plan) parked
+  after the closing slide for Q&A, so the main line stays lean.
+- **Change the substance** — when the objection is right. If the plan really is
+  too expensive or the number really doesn't hold, that's a finding about the
+  message, not a framing problem; raise it with the person instead of papering
+  over it.
+- **Flag as open** — when no honest answer exists yet. Say what evidence would
+  answer it; never invent a counter-argument or a number to fill the gap.
+
+**The rule that makes pre-empting work: never raise an objection you don't
+answer.** Acknowledging a counterargument and then refuting it persuades better
+than ignoring it; acknowledging it and leaving it standing persuades worse than
+ignoring it. Every objection placed in the talk comes with its answer in the same
+breath. Pre-emptive refutation also protects the decision later: an audience that
+has heard a weakened version of a counterargument answered resists the full
+version better when a competitor or an internal skeptic raises it after the talk.
+
+**Budget the airtime.** Each pre-emption costs time and listener attention. As a
+working heuristic, one or two in-talk pre-emptions per ten minutes is plenty;
+everything else goes to notes and backup slides. If the top objections can't fit,
+that usually means the talk is aimed at the wrong question.
+
+**Turn the result into rehearsal.** The hardest objection is the best Q&A drill:
+have the person answer it aloud, then coach the answer like any other passage —
+short, concrete, ending on the talk's message rather than on the objection.
+
+**When to skip it.** A talk with no belief or decision to shift — a toast, a
+eulogy, a purely celebratory announcement — has no objections worth pre-empting.
+Skip the pass and say why in one line.
+
+**Source attribution:** the refute-don't-just-acknowledge rule is drawn from
+meta-analyses of one-sided versus two-sided persuasive messages (Allen, 1991, in
+the _Western Journal of Speech Communication_; O'Keefe, 1999, in _Communication
+Yearbook_), which found refutational two-sided messages more persuasive than
+one-sided ones and non-refutational two-sided messages less persuasive. The
+protective effect of pre-emptive refutation is inoculation theory (McGuire, 1961;
+meta-analysis by Banas & Rains, 2010, in _Communication Monographs_). The
+"failure already happened" framing is prospective hindsight (Mitchell, Russo &
+Pennington, 1989, in the _Journal of Behavioral Decision Making_), popularized as
+the project pre-mortem by Gary Klein (2007, _Harvard Business Review_). The
+airtime budget is a coaching heuristic, not a research finding. These are stated
+directly here as coaching guidance rather than paraphrased from any single
+source's narrative.

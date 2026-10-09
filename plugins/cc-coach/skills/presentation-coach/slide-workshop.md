@@ -23,7 +23,10 @@ asked, and only as far as asked.
 - **Broad requests get a plan first.** "Make the deck better", "rework the whole
   thing", or anything that touches more than a handful of slides: propose a
   slide-by-slide change plan (slide, what changes, content or design, why) and
-  wait for a go. A narrow, unambiguous request ("add speaker notes to every
+  wait for a go. For a new deck or a broad rework, the plan also carries the
+  devil's advocate pass from `SKILL.md` Step 3c — the kept objections and where
+  the deck answers each — so the go covers those slides, notes, and backup slides
+  too. A narrow, unambiguous request ("add speaker notes to every
   slide", "retitle slide 3 to X") can go straight to work.
 - **The template is read-only.** A registered template is never edited, renamed,
   or overwritten — new decks are built from a copy.
@@ -176,6 +179,18 @@ before adding makes python-pptx reuse a part name and write a corrupt file with
 duplicate entries — `inventory` and `diff` flag that as `CORRUPT`. Don't duplicate
 slides by copying XML; build the new slide from its layout instead.
 
+**Answering objections** (when the approved plan places them in the deck):
+
+- **In-talk pre-emption** — the slide title states the answer, not the objection
+  ("Payback in 14 months, including migration"), and the objection itself is
+  named in the body or the spoken line. Never put an objection on a slide without
+  its answer on the same slide.
+- **Backup slides** — after the closing slide, under a divider titled `Backup`
+  (or the template's section-divider layout), one objection per slide, titled
+  with the answer. They don't count toward the talk's time.
+- **Notes** — the prepared line goes into the speaker notes of the slide where
+  the objection is most likely to come up, prefixed `If asked:`.
+
 **Speaker notes**: one per slide on request — the slide's point in a sentence, 2–4
 spoken beats, the transition to the next slide, an estimated time. Mark times as
 estimates and check that they add up to the talk's slot. Notes say what the slide
@@ -198,7 +213,10 @@ doesn't; they never contradict it.
    substituted.
 4. **Talk fit** — titles carry the message the coaching settled on, one
    communicative job per slide, nothing the speaker will read aloud verbatim, the
-   slide count fits the slot.
+   slide count fits the slot (backup slides excluded).
+5. **Objections** — if the plan placed objections, each one is answered where
+   planned, none is raised without its answer, and in-talk pre-emptions stay
+   within the airtime budget from the framework.
 
 ## 8. Hand-off
 
@@ -209,8 +227,13 @@ A short delimited reply under `## Slide Workshop`:
 - Placeholders left for missing facts.
 - What was not verified (no render available, substituted fonts, risky objects on
   changed slides, animations or links not checked).
+- **Objections** (when the pass ran): where each kept objection is answered, a
+  one-sentence answer for each Q&A-prep objection, and any objection still open
+  with the evidence that would close it. After a narrow request: at most one line
+  on an obvious objection the changed slides invite.
 - One coaching offer tied to the change — e.g. "Want to rehearse the transition
-  from slide 3 into the new slide 4?" — not a list of further edits.
+  from slide 3 into the new slide 4?", or, when the pass ran, "Want to practice
+  answering the payback question aloud?" — not a list of further edits.
 
 ## 9. When the tooling isn't there
 
