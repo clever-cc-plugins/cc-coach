@@ -8,3 +8,7 @@
 .codegraph/
 .serena/
 .tokensave/
+
+# Python bytecode
+__pycache__/
+*.pyc
