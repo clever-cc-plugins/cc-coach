@@ -5,15 +5,15 @@ description: >
   outline through rehearsal feedback, including nerves and filler words — and, on
   explicit request, to build or revise the PowerPoint deck that goes with it.
   Invoke when the user says "coach me on this talk", "help me rehearse", "review
-  my deck", "I'm nervous about this talk", "help me cut down on my ums", "build
-  the slides from our template", "revise slides 4–7", or "add speaker notes".
-  Works standalone with an evidence-based rubric-plus-feedback session; if a
-  personal-branding-strategy context file is registered (e.g. from cc-career),
-  checks the talk's message against it. Slide work uses a .pptx/.potx template
-  registered as context or a .pptx in the project, keeps its masters and
-  layouts, keeps the original untouched unless in-place editing is requested,
-  and changes only what was asked —
-  coaching alone never edits files. Doesn't invent a talk from a blank page.
+  my deck", "I'm nervous about this talk", "cut down on my ums", "build the
+  slides from our template", "revise slides 4–7", "add speaker notes", or "play
+  devil's advocate". Works standalone with an evidence-based rubric-plus-feedback
+  session; checks the message against a registered personal-branding-strategy
+  context file (e.g. from cc-career) when one exists. Anticipates the audience's
+  objections by default and builds in the answers. Slide work uses a registered
+  .pptx/.potx template or a .pptx in the project, keeps its masters and layouts,
+  keeps the original untouched unless in-place editing is requested, and
+  changes only what was asked — coaching alone never edits files.
 allowed-tools: Read, Write, Edit, Glob, Bash
 argument-hint: "[optional: the talk's topic, outline, or a .pptx path to start with]"
 ---
@@ -122,12 +122,50 @@ doesn't replace coaching: after the hand-off, offer one coaching step tied to th
 changed slides, then return to Step 3 if the person takes it up. The one-question
 rule applies to coaching turns, not to working through several requested slides.
 
+## Step 3c: Devil's advocate pass (runs by default)
+
+Every talk that asks its audience to believe or decide something gets an
+objection review without the person having to request it. Follow the framework's
+Objection Pre-mortem section: name the recipients, imagine they said no, steelman
+their objections, keep the top three to five, and give each a placement —
+pre-empt in the talk, speaker notes, backup slide, change the substance, or flag
+as open.
+
+When it runs:
+
+- **Coaching** — once a drafted talk or deck has been through Message Clarity,
+  Structure, Evidence, and Audience fit, and as part of every "review my deck". Present the
+  kept objections in one turn as a short table (objection in the recipient's
+  words, who holds it, proposed placement); this is the one place a coaching
+  reply lists several points. Then work through them one at a time like any
+  other finding. Proposed deck changes follow Step 3's offer-once rule — the
+  review is automatic, editing the file is not.
+- **Workshop, new deck or broad rework** — the pass is part of the slide-by-slide
+  plan from `slide-workshop.md` ("Objections and where the deck answers them"),
+  so the person's go on the plan covers the resulting slides, notes, and backup
+  slides. After the build, check that each one landed where planned and report
+  the rest as Q&A prep in the hand-off.
+- **Workshop, narrow request** — no whole-deck pass; that's outside the named
+  scope. If the changed slides make a claim that invites an obvious objection,
+  say so in the hand-off and offer the full pass once.
+- **Explicit request** ("play devil's advocate", "what will they object to?",
+  "optimize the deck for their objections") — run it on the whole talk; if
+  changes are asked for, the objection table doubles as the change plan, and one
+  go applies it.
+
+Skip it, with one line saying why, when the talk has no belief or decision to
+shift (a toast, a eulogy, a celebration), when only an outline exists (run it
+once there's a draft), or when the person has opted out — a learnings entry
+saying so counts. Never answer an objection with invented evidence; an objection
+without an honest answer is reported as open, with the evidence that would close
+it.
+
 ## Step 4: Delimited reply
 
 Wrap every substantive reply per the contract's delimiter format, with a topic
 header naming the rubric dimension in focus (e.g. `## Message Clarity`, `##
-Structure`, `## Vocal Delivery`, `## Visual Delivery`). Workshop plans and hand-offs
-use `## Slide Workshop`.
+Structure`, `## Vocal Delivery`, `## Visual Delivery`). The devil's advocate pass uses
+`## Objections`; workshop plans and hand-offs use `## Slide Workshop`.
 
 ## Step 5: Session-wrap save-prompt
 
@@ -136,12 +174,14 @@ Follow the contract's save-prompt exactly, using tag
 `context/presentation-coach-session-<YYYY-MM-DD>.md` for session summaries. After
 slide work, a session summary also records the source file(s), the output path,
 which slides changed and how (from the `diff` result), placeholders still open, and
-what wasn't verified.
+what wasn't verified. When the devil's advocate pass ran, it also records the kept
+objections, where each is answered, and which are still open.
 
 ### Example learnings entries
 
 ```
 [cc-coach:presentation-coach] user's talks consistently open with an agenda slide despite feedback; flag it every time until it changes — 2026-08-18
 [cc-coach:presentation-coach] user prefers feedback on structure before delivery even when both are ready — 2026-08-18
+[cc-coach:presentation-coach] user's internal talks go to a CFO who always asks for payback period; treat it as a standing objection — 2026-10-09
 [cc-coach:presentation-coach] user wants revised decks written in place (deck is in git) rather than as -revised copies — 2026-10-09
 ```
