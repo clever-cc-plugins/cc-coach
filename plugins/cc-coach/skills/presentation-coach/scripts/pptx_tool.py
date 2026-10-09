@@ -129,11 +129,17 @@ class Package:
         return f"unknown ({ct or 'no content type'})"
 
     def slides(self):
-        """Slide part names in presentation order, with hidden flag."""
+        """Slide part names in presentation order."""
         pres = self.xml(self.main)
         rid_to_target = {r["id"]: r["target"] for r in self.rels(self.main)}
         lst = pres.find("p:sldIdLst", NS)
         return [rid_to_target[s.get(R_ID)] for s in (lst if lst is not None else [])]
+
+    def slide_ids(self):
+        """Presentation slide IDs in order. PowerPoint and python-pptx keep a
+        slide's ID across saves, so it identifies the same slide in two files."""
+        lst = self.xml(self.main).find("p:sldIdLst", NS)
+        return [s.get("id") for s in (lst if lst is not None else [])]
 
     def masters(self):
         pres = self.xml(self.main)
@@ -392,7 +398,8 @@ def design_parts(pkg):
         for t in pkg.rel_targets(m, "theme"):
             out[f"theme {t}"] = digest(pkg, t)
         for lay in pkg.rel_targets(m, "layout"):
-            out[f"layout {layout_name(pkg, lay)!r}"] = digest(pkg, lay)
+            # Layout names repeat across masters; the part path keeps keys unique.
+            out[f"layout {layout_name(pkg, lay)!r} ({lay})"] = digest(pkg, lay)
     return out
 
 
@@ -401,16 +408,19 @@ def cmd_diff(args):
     sa = [slide_signature(a, s) for s in a.slides()]
     sb = [slide_signature(b, s) for s in b.slides()]
 
-    # Pass 1: pair identical slide content, preferring the same position.
-    pair = {}
+    ida, idb = a.slide_ids(), b.slide_ids()
+
+    # Pass 1: the same slide ID in both files is the same slide, edited or not.
+    pair = {j: ida.index(sid) for j, sid in enumerate(idb) if sid in ida}
+    # Pass 2: slides without a shared ID (rebuilt or re-imported) pair only by
+    # identical content, preferring the same position. Anything left over is
+    # reported as NEW/removed rather than guessed to be an edit.
     for j, sig in enumerate(sb):
+        if j in pair:
+            continue
         same = [i for i, x in enumerate(sa) if x["content"] == sig["content"] and i not in pair.values()]
         if same:
             pair[j] = j if j in same else same[0]
-    # Pass 2: an unpaired slide whose old position is free counts as edited in place.
-    for j in range(len(sb)):
-        if j not in pair and j < len(sa) and j not in pair.values():
-            pair[j] = j
 
     report, changed = [], 0
     for j, sig in enumerate(sb):

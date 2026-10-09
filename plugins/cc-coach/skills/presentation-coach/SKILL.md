@@ -11,7 +11,8 @@ description: >
   personal-branding-strategy context file is registered (e.g. from cc-career),
   checks the talk's message against it. Slide work uses a .pptx/.potx template
   registered as context or a .pptx in the project, keeps its masters and
-  layouts, never overwrites the original, and changes only what was asked —
+  layouts, keeps the original untouched unless in-place editing is requested,
+  and changes only what was asked —
   coaching alone never edits files. Doesn't invent a talk from a blank page.
 allowed-tools: Read, Write, Edit, Glob, Bash
 argument-hint: "[optional: the talk's topic, outline, or a .pptx path to start with]"

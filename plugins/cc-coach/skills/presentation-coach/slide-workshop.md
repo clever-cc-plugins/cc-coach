@@ -188,8 +188,9 @@ doesn't; they never contradict it.
 2. **Scope** — `diff <original> <output>` (or `diff <converted template>
 <output>` for a new deck). Every `CHANGED`/`NEW` slide must be one the person
    asked for; design must read `unchanged` unless a design change was requested.
-   A `CHANGED` slide that wasn't in scope is a bug: fix it before handing over. A
-   deleted-and-replaced slide shows as `CHANGED` at its position.
+   A `CHANGED` slide that wasn't in scope is a bug: fix it before handing over. Slides
+   are matched by slide ID, so a replaced slide shows as `NEW` plus a removed
+   entry, and a moved slide says where it was.
 3. **Visual** — `render <output> "$TMP/render"` and look at every changed slide
    (Read the PNGs): overflowing or cut-off text, overlaps, leftover placeholder
    prompts ("Click to add text"), contrast, legibility at the back of the room.
