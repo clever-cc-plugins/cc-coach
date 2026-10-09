@@ -90,3 +90,25 @@ checklist.
   later via `new-coaching-skill` without a design change.
 - Registering this plugin in the marketplace catalog (`marketplace.json`) — deferred
   until skills exist.
+
+## Addendum (2026-10-09): presentation-coach slide workshop
+
+`presentation-coach` gained an opt-in second mode: building a deck from a
+`.pptx`/`.potx` template, or revising an existing `.pptx`, when the person
+explicitly asks. Coaching stays the default and never writes files; the workshop's
+permission model (scope = what was named, content and design as separate
+permissions, plan-first for broad requests, read-only template, no overwrite of
+the original) lives in `presentation-coach/slide-workshop.md`.
+
+This stretches the "facilitates a session, produces no long-lived artifact" role on
+purpose: slides and spoken talk are coached as one thing, and a coach that can only
+describe slide fixes leaves the person to translate them by hand. It stays within
+the cross-plugin rule — the slide template is one more optional `## Context files`
+entry, and no PPTX skill or other plugin is required.
+
+It also adds the plugin's first code: `presentation-coach/scripts/pptx_tool.py`
+(standard library only) for inventory, `.potx` → `.pptx` conversion, a slide-level
+diff that proves untouched slides stayed untouched, and rendering. Deterministic
+checks belong in code, not in prompt text the model re-derives each run. It's
+tested manually against python-pptx- and LibreOffice-produced files; the
+no-automated-tests stance above still holds for skill content.
