@@ -12,15 +12,13 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | `.claude/format-markdown.sh`                          | PostToolUse hook: formats Markdown files with prettier after edits                             |
 | `.claude/guard-secret-files.sh`                       | PreToolUse hook: blocks reads/edits/writes of secret .env files                                |
-| `.claudeignore`                                       | Paths excluded from Claude Code indexing                                                       |
-| `.claude/learnings.md`                                | Corrections/observations log, tagged and dated, recalled at the start of the next skill run    |
-| `CLAUDE.md`                                           | Project instructions, loaded every message                                                     |
 | `.claude/settings.json`                               | Permissions, hooks, environment variables                                                      |
 | `.githooks/pre-commit`                                | Secret scanning (gitleaks) + CLAUDE.md table sync                                              |
 | `.github/workflows/claude-code-review.yml`            | Auto-runs Claude Code review on PRs from trusted authors (owner/member/collaborator)           |
 | `.github/workflows/claude.yml`                        | Runs Claude Code on `@claude` mentions in issues/PR comments/reviews, gated to trusted authors |
 | `.github/workflows/release.yml`                       | Triggers the shared `clever-cc-plugins/.github` release workflow on push to `main`             |
 | `.gitignore`                                          | Git ignore patterns                                                                            |
+| `CLAUDE.md`                                           | Project instructions, loaded every message                                                     |
 | `plugins/cc-coach/.claude-plugin/plugin.json`         | Plugin manifest                                                                                |
 | `plugins/cc-coach/skills/career-coach/SKILL.md`       | Skill: Live GROW-model coaching conversation on career questions                               |
 | `plugins/cc-coach/skills/life-coach/SKILL.md`         | Skill: Live coaching on personal, non-job-related goals                                        |
@@ -33,7 +31,7 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 
 ## References
 
-@docs/superpowers/specs/2026-08-18-cc-coach-design.md **Read when:** planning or
+`docs/superpowers/specs/2026-08-18-cc-coach-design.md` — **Read when:** planning or
 implementing skills for this plugin
 
 ## Conventions
@@ -61,4 +59,4 @@ summary to `.claude/learnings.md`. Don't modify `CLAUDE.md` directly.
 
 When compacting, preserve: list of modified files, current test status, open TODOs, and key decisions made.
 
-<!-- cc-config: last-optimize-run: 2026-08-25 461153c281d306aa1a9a2289ad48050798ef84a5 -->
+<!-- cc-config: last-optimize-run: 2026-11-05 8e926b583356ce158c970689cd537be077ca7123 -->
