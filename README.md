@@ -7,25 +7,25 @@
 
 # <img src="assets/icon.svg" width="40" height="40" align="top" alt="" />&nbsp;cc-coach
 
-A [Claude Code](https://claude.ai/code) plugin bundling live-coaching skills across job-related and personal-life domains.
+A [Claude Code](https://claude.ai/code) plugin that bundles live-coaching skills for job-related and personal-life topics. Every session starts on time, and nobody bills by the hour.
 
 ---
 
-## Plugin: `cc-coach`
+## At a Glance
 
-`cc-coach` owns live coaching sessions — a bundle of independent coaching-persona skills, each producing/facilitating one type of conversation. It doesn't maintain long-lived plans; that's its sibling plugin [`cc-career`](https://github.com/clever-cc-plugins/cc-career)'s job for career direction, or [`cc-concept`](https://github.com/clever-cc-plugins/cc-concept)'s for marketing strategy.
+`cc-coach` owns live coaching sessions. It's a bundle of independent coaching-persona skills, and each one facilitates one type of conversation. It doesn't maintain long-lived plans. Its sibling plugin [`cc-career`](https://github.com/clever-cc-plugins/cc-career) handles career direction, and [`cc-concept`](https://github.com/clever-cc-plugins/cc-concept) handles marketing strategy.
 
-Every coaching skill works standalone with a generic, domain-general framework — no sibling plugin required. If your project has a matching context file registered (e.g. `career-plan.md` from `cc-career`), the skill reads it and coaches against that specific plan instead.
+Every coaching skill works standalone with a generic framework for its domain, so no sibling plugin is required. If your project has a matching context file registered (for example `career-plan.md` from `cc-career`), the skill reads it and coaches against that specific plan instead.
 
-| Skill                          | What it does                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/cc-coach:career-coach`       | Live GROW-model coaching conversation on a career question or decision — coaches against your `cc-career` plan when one is registered, generic otherwise                                                                                                                                                                                          |
-| `/cc-coach:life-coach`         | Live coaching on personal, non-job-related goals — habits, work-life balance, relationships, general life direction                                                                                                                                                                                                                               |
-| `/cc-coach:networking-coach`   | Live coaching on building and maintaining personal networks — starting conversations, overcoming social anxiety, deepening ties                                                                                                                                                                                                                   |
-| `/cc-coach:presentation-coach` | Live coaching on talks, webinars, and presentations — outline through rehearsal feedback, using a rubric plus SBI feedback, with a built-in devil's advocate pass that anticipates audience objections; on request, builds a new PowerPoint deck from your template or revises an existing deck in your project, changing only what you asked for |
-| `/cc-coach:productivity-coach` | Live coaching on personal productivity — task overwhelm, procrastination, focus, and habit-building — evidence-first, correcting popular productivity-book myths (GTD, The 4-Hour Work Week, A Perfect Mess) against the research                                                                                                                 |
-| `/cc-coach:research-prompt`    | Generates a vendor-neutral deep-research prompt for a coaching domain or methodology, ready to paste into Claude, ChatGPT, Gemini, Perplexity, or similar                                                                                                                                                                                         |
-| `/cc-coach:new-coaching-skill` | Builds a new coaching skill for a specific domain from research notes                                                                                                                                                                                                                                                                             |
+| Skill                          | What it does                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/cc-coach:career-coach`       | Coaches you live on a career question or decision with the GROW model, against your `cc-career` plan when one is registered and with the generic framework otherwise                                                                                                                                                                 |
+| `/cc-coach:life-coach`         | Coaches you live on personal, non-job-related goals: habits, work-life balance, relationships, general life direction                                                                                                                                                                                                                |
+| `/cc-coach:networking-coach`   | Coaches you live on building and maintaining personal networks: starting conversations, overcoming social anxiety, deepening ties                                                                                                                                                                                                    |
+| `/cc-coach:presentation-coach` | Coaches you live on talks, webinars, and presentations, from outline to rehearsal feedback, using a rubric plus SBI feedback and a built-in devil's advocate pass that anticipates audience objections. On request, it builds a new PowerPoint deck from your template or revises an existing deck, changing only what you asked for |
+| `/cc-coach:productivity-coach` | Coaches you live on task overwhelm, procrastination, focus, and habit-building. It checks popular productivity-book claims (GTD, The 4-Hour Work Week, A Perfect Mess) against the research and corrects the myths                                                                                                                   |
+| `/cc-coach:research-prompt`    | Generates a vendor-neutral deep-research prompt for a coaching domain or methodology, ready to paste into Claude, ChatGPT, Gemini, Perplexity, or similar                                                                                                                                                                            |
+| `/cc-coach:new-coaching-skill` | Builds a new coaching skill for a specific domain from research notes                                                                                                                                                                                                                                                                |
 
 ---
 
@@ -38,23 +38,35 @@ Open Claude Code in any project and run:
 /plugin install cc-coach@clever-cc-plugins
 ```
 
-This makes all skills immediately available.
+All skills are available immediately.
 
 ### Keeping Skills Current
 
-Auto-update is disabled by default for third-party marketplaces. To enable it:
+Auto-update is off by default for third-party marketplaces. To switch it on:
 
 1. Run `/plugin` in Claude Code
-2. Go to the **Marketplaces** tab
+2. Open the **Marketplaces** tab
 3. Toggle auto-update for `clever-cc-plugins/marketplace`
 
-Once enabled, skills update automatically on startup when new versions are available.
+Once it's on, Claude Code updates the skills on startup whenever a new version is available.
+
+### Uninstalling
+
+```
+/plugin uninstall cc-coach@clever-cc-plugins
+```
+
+To remove the marketplace as well (this uninstalls every plugin you installed from it):
+
+```
+/plugin marketplace remove clever-cc-plugins
+```
 
 ---
 
 ## Getting Started
 
-Just invoke the coaching skill that matches what you want to talk through — there's no onboarding step required:
+Invoke the coaching skill that matches what you want to talk through. There's no onboarding step:
 
 ```
 /cc-coach:career-coach
@@ -64,13 +76,13 @@ Just invoke the coaching skill that matches what you want to talk through — th
 /cc-coach:presentation-coach
 ```
 
-Each skill runs a live, conversational session rather than producing a document. If the domain needs research first (a coaching methodology you want grounded in evidence, say), start with:
+Each skill runs a live conversation and doesn't produce a document. If a domain needs research first (a coaching methodology you want grounded in evidence, say), start with:
 
 ```
 /cc-coach:research-prompt
 ```
 
-and paste the resulting prompt into a deep-research tool before your session.
+Paste the resulting prompt into a deep-research tool before your session.
 
 Want a coach for a domain that isn't covered yet? Build one:
 
@@ -82,13 +94,19 @@ Want a coach for a domain that isn't covered yet? Build one:
 
 ## Working with cc-career
 
-Installing [`cc-career`](https://github.com/clever-cc-plugins/cc-career) is optional, not required. `career-coach` runs a standalone GROW-model session by default; if `cc-career` is installed and has produced a `career-plan.md` or `personal-branding-strategy.md` registered in your project's `## Context files` table, `career-coach` reads it and coaches against that specific plan instead of the generic framework. Neither plugin depends on the other being installed.
+Installing [`cc-career`](https://github.com/clever-cc-plugins/cc-career) is optional. `career-coach` runs a standalone GROW-model session by default. If `cc-career` has produced a `career-plan.md` or `personal-branding-strategy.md` that is registered in your project's `## Context files` table, `career-coach` reads it and coaches against that specific plan instead of the generic framework. Neither plugin needs the other.
+
+---
+
+## Contributing
+
+Issues and pull requests are welcome. If you've spotted a gap or a rough edge, please open an issue first so we can agree on the approach.
 
 ---
 
 ## License
 
-[MIT](LICENSE) — Copyright (c) 2026 Michael van Laar
+[MIT](LICENSE), Copyright (c) 2026 Michael van Laar
 
 ---
 
