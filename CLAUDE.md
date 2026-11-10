@@ -27,6 +27,7 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 | `plugins/cc-coach/skills/presentation-coach/SKILL.md` | Skill: Live coaching on talks/webinars (rubric + SBI); opt-in PPTX slide workshop              |
 | `plugins/cc-coach/skills/productivity-coach/SKILL.md` | Skill: Evidence-first coaching on task overwhelm, procrastination, focus, and habits           |
 | `plugins/cc-coach/skills/research-prompt/SKILL.md`    | Skill: Generate a vendor-neutral deep-research prompt for a coaching domain                    |
+| `scripts/stamp-shared-files.sh`                       | Pre-commit: stamps `_Last updated_` on changed `_shared/*.md`                                  |
 | `scripts/sync-config-table.sh`                        | Keeps Key Config Files table in sync on each commit                                            |
 
 ## References
