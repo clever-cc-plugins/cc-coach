@@ -122,7 +122,7 @@ For each gap, ask once:
 
 Create the skill folder.
 
-**End-user mode:** first check the shared copies from an earlier run. The copy below happens once, so plugin updates never reach a project on their own. If `.claude/skills/_shared/skill-contract.md` or `.claude/skills/_shared/learnings-protocol.md` already exists, compare its `_Last updated: YYYY-MM-DD_` line (line 3) with the plugin's copy at `${CLAUDE_SKILL_DIR}/../_shared/<file>`. A project copy without that line counts as older. Identical dates say nothing. If the plugin's copy is newer, ask per file:
+**End-user mode:** first check the shared copies from an earlier run. The copy below happens once, so plugin updates never reach a project on their own. If `.claude/skills/_shared/skill-contract.md` or `.claude/skills/_shared/learnings-protocol.md` already exists, compare it with the plugin's copy at `${CLAUDE_SKILL_DIR}/../_shared/<file>`. For `skill-contract.md`, compare the `_Last updated: YYYY-MM-DD_` line (line 3); a project copy without that line counts as older, and identical dates say nothing. For `learnings-protocol.md`, compare contents instead (`diff -q`), because nobody should customize it and a hand-bumped date can be missed: identical files say nothing, and any difference counts as older. If the plugin's copy is newer (or, for the protocol, different), ask per file (for the protocol, say the copy "differs from the plugin's current version" instead of quoting dates):
 
 > "Your project's copy of `<file>` (last updated <project-date-or-'unknown'>) is older than the plugin's version (last updated <plugin-date>). Refresh it with the plugin's version? This overwrites any local edits to the file. (refresh / keep / show diff)"
 
