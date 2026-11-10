@@ -97,6 +97,6 @@ learnings and `context/career-coach-session-<YYYY-MM-DD>.md` for session summari
 ### Example learnings entries
 
 ```
-[cc-coach:career-coach] user consistently under-scopes the Will stage, needs a second push for a specific date (inferred) — 2026-08-18
-[cc-coach:career-coach] user's Career Anchor (Technical/Functional) means management-track Options should be offered but not pushed (inferred) — 2026-08-18
+[cc-coach:career-coach] user consistently under-scopes the Will stage, needs a second push for a specific date (stated) — 2026-08-18
+[cc-coach:career-coach] user's Career Anchor (Technical/Functional) means management-track Options should be offered but not pushed (stated) — 2026-08-18
 ```

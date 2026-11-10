@@ -98,7 +98,7 @@ learnings and `context/productivity-coach-session-<YYYY-MM-DD>.md` for session s
 ### Example learnings entries
 
 ```
-[cc-coach:productivity-coach] user's overwhelm is driven by an unreviewed capture list, not lack of a system — reviewing cadence was the actual gap (inferred) — 2026-08-24
-[cc-coach:productivity-coach] user responds to implementation intentions but only when tied to an existing routine, not a standalone time of day (inferred) — 2026-08-24
-[cc-coach:productivity-coach] user had internalized the 21-day habit myth and was discouraged after day 10 — resetting the timeline expectation (median 66 days) was the actual unlock (inferred) — 2026-08-24
+[cc-coach:productivity-coach] user's overwhelm is driven by an unreviewed capture list, not lack of a system — reviewing cadence was the actual gap (stated) — 2026-08-24
+[cc-coach:productivity-coach] user responds to implementation intentions but only when tied to an existing routine, not a standalone time of day (stated) — 2026-08-24
+[cc-coach:productivity-coach] user had internalized the 21-day habit myth and was discouraged after day 10 — resetting the timeline expectation (median 66 days) was the actual unlock (stated) — 2026-08-24
 ```

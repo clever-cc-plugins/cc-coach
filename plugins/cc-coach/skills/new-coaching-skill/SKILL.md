@@ -226,7 +226,7 @@ Required skill steps — write each as a level-2 heading, following the shape of
 - **Step 5: Session-wrap save-prompt** — reference the contract's save-prompt
   directly, with tag `[cc-coach:<domain-name>]` and
   `context/<domain-name>-session-<YYYY-MM-DD>.md`, plus two example learnings
-  entries specific to this domain, each marked with a source (`stated`, `corrected` or `inferred`).
+  entries specific to this domain, each marked `(stated)`, the only source the save-prompt records.
 
 **Then verify the draft against these non-negotiables, and fix every violation
 before writing the file:**
