@@ -11,9 +11,7 @@ save-prompt wording.
 
 ## The sequence
 
-0. **Recall learnings** (silent) — read `.claude/learnings.md` if present, across
-   all plugin tags. Apply relevant observations. Never announce this step; surface
-   nothing unless it changes behavior.
+0. **Recall learnings** (silent) — read `learnings-protocol.md` in this `_shared/` folder and follow its **Recall** section.
 1. **Load context — enrichment, never gating** — read the `## Context files` table
    in `CLAUDE.md`. Check for the skill's own named enrichment source(s) by semantic
    Summary match, never by label or filename. This skill never blocks or asks an
@@ -51,8 +49,7 @@ register `/career-plan`'s output partway through."`
 for future sessions to recall) or write a session summary to
 context/<skill-name>-session-<date>.md (for you to revisit, not auto-loaded by
 other skills). Which, or neither?"`
-   2. If **learnings**: append to `.claude/learnings.md` tagged
-      `[cc-coach:<skill-name>]`.
+   2. If **learnings**: read `learnings-protocol.md` in this `_shared/` folder and record the observation per its **Writing** section, tagged `[cc-coach:<skill-name>]` with source `stated` (the user chose to save it), then follow its **Confirming** section.
    3. If **session summary**: write to `context/<skill-name>-session-<YYYY-MM-DD>.md`
       with a collision-check suffix (`-2`, `-3`, ...) if that exact date's file
       already exists. Do **not** register it in the `## Context files` table — it's

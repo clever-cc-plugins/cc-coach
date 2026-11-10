@@ -8,7 +8,7 @@ description: >
   personal (not career) topic. Works standalone with a generic Wheel-of-Life-plus-
   GROW session — no sibling plugin needed or consulted. Do NOT use this for
   career-specific questions — that's `career-coach`'s job.
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: the life domain or situation to start with]"
 ---
 
@@ -85,6 +85,6 @@ learnings and `context/life-coach-session-<YYYY-MM-DD>.md` for session summaries
 ### Example learnings entries
 
 ```
-[cc-coach:life-coach] user's lowest Wheel-of-Life score is consistently Physical Environment but they never choose to work on it — respect that, don't push — 2026-08-18
-[cc-coach:life-coach] user responds better to Will-stage commitments framed as weekly, not monthly — 2026-08-18
+[cc-coach:life-coach] user's lowest Wheel-of-Life score is consistently Physical Environment but they never choose to work on it — respect that, don't push (inferred) — 2026-08-18
+[cc-coach:life-coach] user responds better to Will-stage commitments framed as weekly, not monthly (inferred) — 2026-08-18
 ```

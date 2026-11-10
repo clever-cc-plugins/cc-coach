@@ -10,7 +10,7 @@ description: >
   plugin needed or consulted. Distinguishes scientifically supported techniques
   from popular but unproven productivity-book claims (GTD, The 4-Hour Work Week,
   A Perfect Mess).
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: the productivity problem or situation to start with]"
 ---
 
@@ -27,7 +27,7 @@ below add only productivity-coach-specific behavior.
 
 ## Step 0-1: Recall learnings and load context (enrichment only)
 
-Recall learnings silently per the contract. This skill has no enrichment source; personal
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. This skill has no enrichment source; personal
 productivity mechanics apply equally across career, creative, and personal contexts.
 Proceed directly to session framing.
 
@@ -98,7 +98,7 @@ learnings and `context/productivity-coach-session-<YYYY-MM-DD>.md` for session s
 ### Example learnings entries
 
 ```
-[cc-coach:productivity-coach] user's overwhelm is driven by an unreviewed capture list, not lack of a system — reviewing cadence was the actual gap — 2026-08-24
-[cc-coach:productivity-coach] user responds to implementation intentions but only when tied to an existing routine, not a standalone time of day — 2026-08-24
-[cc-coach:productivity-coach] user had internalized the 21-day habit myth and was discouraged after day 10 — resetting the timeline expectation (median 66 days) was the actual unlock — 2026-08-24
+[cc-coach:productivity-coach] user's overwhelm is driven by an unreviewed capture list, not lack of a system — reviewing cadence was the actual gap (inferred) — 2026-08-24
+[cc-coach:productivity-coach] user responds to implementation intentions but only when tied to an existing routine, not a standalone time of day (inferred) — 2026-08-24
+[cc-coach:productivity-coach] user had internalized the 21-day habit myth and was discouraged after day 10 — resetting the timeline expectation (median 66 days) was the actual unlock (inferred) — 2026-08-24
 ```

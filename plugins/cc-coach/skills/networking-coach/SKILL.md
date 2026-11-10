@@ -9,7 +9,7 @@ description: >
   framework. Do NOT use this for career-specific networking as the primary goal — that's
   `career-coach`'s domain; use this skill only when the coaching session reaches operational
   networking questions during a career or life coaching session.
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: the networking situation or barrier to start with]"
 ---
 
@@ -25,7 +25,7 @@ below add only networking-coach-specific behavior.
 
 ## Step 0-1: Recall learnings and load context (enrichment only)
 
-Recall learnings silently per the contract. This skill has no enrichment source; networking
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. This skill has no enrichment source; networking
 tactics apply equally across personal, professional, and career contexts. Proceed directly to
 session framing.
 
@@ -83,7 +83,7 @@ learnings and `context/networking-coach-session-<YYYY-MM-DD>.md` for session sum
 ### Example learnings entries
 
 ```
-[cc-coach:networking-coach] user's liking gap is pronounced; they consistently interpret neutral responses as rejection — practice prediction-testing before next session — 2026-08-24
-[cc-coach:networking-coach] user joins recurring activities but assumes people won't want to talk outside the structured time; normalize that weak-tie maintenance happens gradually — 2026-08-24
-[cc-coach:networking-coach] user is rebuilding from isolation; started with one weekly volunteer commitment, had breakthrough moment when someone asked *them* for advice — don't push toward "doing more" yet, support deepening this one thread — 2026-08-24
+[cc-coach:networking-coach] user's liking gap is pronounced; they consistently interpret neutral responses as rejection — practice prediction-testing before next session (inferred) — 2026-08-24
+[cc-coach:networking-coach] user joins recurring activities but assumes people won't want to talk outside the structured time; normalize that weak-tie maintenance happens gradually (inferred) — 2026-08-24
+[cc-coach:networking-coach] user is rebuilding from isolation; started with one weekly volunteer commitment, had breakthrough moment when someone asked *them* for advice — don't push toward "doing more" yet, support deepening this one thread (inferred) — 2026-08-24
 ```
