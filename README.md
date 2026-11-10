@@ -90,6 +90,8 @@ Want a coach for a domain that isn't covered yet? Build one:
 /cc-coach:new-coaching-skill
 ```
 
+In a project, the new skill gets copies of the shared contract and learnings protocol; running the command again later offers to refresh outdated copies, asking before it overwrites anything.
+
 ---
 
 ## Working with cc-career

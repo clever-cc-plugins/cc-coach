@@ -32,7 +32,7 @@ below add only presentation-coach-specific behavior.
 
 ## Step 0-1: Recall learnings and load context (enrichment only)
 
-Recall learnings silently per the contract. Read the `## Context files` table in
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Read the `## Context files` table in
 `CLAUDE.md`. Check for these enrichment sources by semantic Summary match — never by
 label or filename:
 
@@ -180,8 +180,8 @@ objections, where each is answered, and which are still open.
 ### Example learnings entries
 
 ```
-[cc-coach:presentation-coach] user's talks consistently open with an agenda slide despite feedback; flag it every time until it changes — 2026-08-18
-[cc-coach:presentation-coach] user prefers feedback on structure before delivery even when both are ready — 2026-08-18
-[cc-coach:presentation-coach] user's internal talks go to a CFO who always asks for payback period; treat it as a standing objection — 2026-10-09
-[cc-coach:presentation-coach] user wants revised decks written in place (deck is in git) rather than as -revised copies — 2026-10-09
+[cc-coach:presentation-coach] user's talks consistently open with an agenda slide despite feedback; flag it every time until it changes (stated) — 2026-08-18
+[cc-coach:presentation-coach] user prefers feedback on structure before delivery even when both are ready (stated) — 2026-08-18
+[cc-coach:presentation-coach] user's internal talks go to a CFO who always asks for payback period; treat it as a standing objection (stated) — 2026-10-09
+[cc-coach:presentation-coach] user wants revised decks written in place (deck is in git) rather than as -revised copies (stated) — 2026-10-09
 ```

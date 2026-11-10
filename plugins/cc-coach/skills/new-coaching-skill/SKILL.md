@@ -5,7 +5,7 @@ description: >
   when the user says "create a new coaching skill", "build a coach for [domain]",
   "new coaching skill", "synthesize research into a coaching skill", or "create a
   [domain] coach skill".
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "<domain-name> [--plugin] (e.g., negotiation-coach, sales-coach --plugin)"
 ---
 
@@ -17,11 +17,11 @@ areas a coaching skill needs, synthesizes a `coaching-framework.md` shared refer
 and generates a `SKILL.md` skeleton ready for customization — following the
 conversational shape every cc-coach skill uses (see `../_shared/skill-contract.md`).
 
+Re-running `/new-coaching-skill` in end-user mode also checks the project's shared copies of the contract and the learnings protocol against the plugin's and offers to refresh outdated ones.
+
 ## Step 0: Recall learnings
 
-If `.claude/learnings.md` exists, read it silently. Apply relevant entries — such as
-prior skill-creation observations or project-level defaults that would affect how this
-skill is structured. Do not announce this step. If the file is absent, continue normally.
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Apply entries such as prior skill-creation observations or project-level defaults that would affect how this skill is structured.
 
 ## Step 1: Determine the domain name and mode
 
@@ -122,11 +122,24 @@ For each gap, ask once:
 
 Create the skill folder.
 
-**End-user mode:**
+**End-user mode:** first check the shared copies from an earlier run. The copy below happens once, so plugin updates never reach a project on their own. If `.claude/skills/_shared/skill-contract.md` or `.claude/skills/_shared/learnings-protocol.md` already exists, compare its `_Last updated: YYYY-MM-DD_` line (line 3) with the plugin's copy at `${CLAUDE_SKILL_DIR}/../_shared/<file>`. A project copy without that line counts as older. Identical dates say nothing. If the plugin's copy is newer, ask per file:
+
+> "Your project's copy of `<file>` (last updated <project-date-or-'unknown'>) is older than the plugin's version (last updated <plugin-date>). Refresh it with the plugin's version? This overwrites any local edits to the file. (refresh / keep / show diff)"
+
+- **show diff**: run `diff .claude/skills/_shared/<file> "${CLAUDE_SKILL_DIR}/../_shared/<file>"`, show the output, then re-ask refresh or keep.
+- **refresh**: copy the plugin's file over the project's copy and confirm in one line.
+- **keep**: leave the file as it is; it will ask again the next time this skill runs in end-user mode.
+
+Never overwrite silently, because the project's copy may have been customized. Then create the folders and copy only the files that are still missing:
 
 ```bash
 mkdir -p .claude/skills/<domain-name>
+mkdir -p .claude/skills/_shared
+[ -e .claude/skills/_shared/skill-contract.md ] || cp "${CLAUDE_SKILL_DIR}/../_shared/skill-contract.md" .claude/skills/_shared/
+[ -e .claude/skills/_shared/learnings-protocol.md ] || cp "${CLAUDE_SKILL_DIR}/../_shared/learnings-protocol.md" .claude/skills/_shared/
 ```
+
+`${CLAUDE_SKILL_DIR}` is the directory of this `SKILL.md`; if it stays literal or empty because another skill read this file instead of invoking it, use the directory of this file instead (the `_shared` folder is its sibling). Write the resulting absolute path into the command itself; never assign it to a shell variable first, because a command that starts with an assignment matches no permission rule and gets refused.
 
 **Plugin-dev mode:** the shared contract already exists in the repo at
 `plugins/cc-coach/skills/_shared/skill-contract.md`. Only create the new skill
@@ -188,7 +201,7 @@ description: >
   says "[TRIGGER PHRASES]". Works standalone with a generic [FRAMEWORK NAME]
   session[; enriches from <context need> when registered, if area 4 found a
   candidate].
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: the situation to start with]"
 ---
 ```
@@ -208,9 +221,7 @@ when:** starting this skill`
 
 Then this line, verbatim, matching every other cc-coach skill:
 
-`This skill follows the shared step sequence in ../_shared/skill-contract.md (or
-../../.claude/skills/_shared — adjust the relative path to match end-user mode's
-actual layout). Steps below add only <domain-name>-specific behavior.`
+`This skill follows the shared step sequence in ../_shared/skill-contract.md. Steps below add only <domain-name>-specific behavior.`
 
 Required skill steps — write each as a level-2 heading, following the shape of
 `career-coach/SKILL.md` and `presentation-coach/SKILL.md` in this plugin exactly:
@@ -227,15 +238,14 @@ Required skill steps — write each as a level-2 heading, following the shape of
 - **Step 5: Session-wrap save-prompt** — reference the contract's save-prompt
   directly, with tag `[cc-coach:<domain-name>]` and
   `context/<domain-name>-session-<YYYY-MM-DD>.md`, plus two example learnings
-  entries specific to this domain.
+  entries specific to this domain: one marked `(stated)` (the user's own words carry the content) and one marked `(inferred)` (the coach drew the conclusion and the user only agreed to save it), as the contract's save-prompt records them.
 
 **Then verify the draft against these non-negotiables, and fix every violation
 before writing the file:**
 
 - `name:` field is bare `<domain-name>` — never repeats the `cc-coach-` prefix.
 - The required @-import line is present, with the mode-correct path.
-- The shared-contract reference line is present, verbatim (relative path adjusted
-  for end-user mode).
+- The shared-contract reference line is present, verbatim.
 - All five required step headings are present, in order, in the shape above.
 - Trigger phrases follow the mode rule exactly: `[TODO: ...]` placeholder in
   end-user mode, 3-5 concrete phrases in plugin-dev mode — never the wrong one for

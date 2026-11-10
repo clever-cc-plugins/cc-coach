@@ -9,7 +9,7 @@ description: >
   file is registered (e.g. from cc-career), coaches against that specific plan
   instead. Do NOT use this to build or revise a career plan document — that's
   cc-career's job; this skill only coaches the conversation.
-allowed-tools: Read, Write, Bash
+allowed-tools: Read, Write, Edit, Bash
 argument-hint: "[optional: the career situation or question to start with]"
 ---
 
@@ -25,7 +25,7 @@ below add only career-coach-specific behavior.
 
 ## Step 0-1: Recall learnings and load context (enrichment only)
 
-Recall learnings silently per the contract. Read the `## Context files` table in
+Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Read the `## Context files` table in
 `CLAUDE.md`. Check for these two enrichment sources by semantic Summary match —
 never by label or filename:
 
@@ -97,6 +97,6 @@ learnings and `context/career-coach-session-<YYYY-MM-DD>.md` for session summari
 ### Example learnings entries
 
 ```
-[cc-coach:career-coach] user consistently under-scopes the Will stage, needs a second push for a specific date — 2026-08-18
-[cc-coach:career-coach] user's Career Anchor (Technical/Functional) means management-track Options should be offered but not pushed — 2026-08-18
+[cc-coach:career-coach] user consistently under-scopes the Will stage, needs a second push for a specific date (inferred) — 2026-08-18
+[cc-coach:career-coach] user's Career Anchor (Technical/Functional) means management-track Options should be offered but not pushed (inferred) — 2026-08-18
 ```
