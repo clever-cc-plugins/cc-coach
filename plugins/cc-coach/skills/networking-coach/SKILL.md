@@ -83,7 +83,7 @@ learnings and `context/networking-coach-session-<YYYY-MM-DD>.md` for session sum
 ### Example learnings entries
 
 ```
-[cc-coach:networking-coach] user's liking gap is pronounced; they consistently interpret neutral responses as rejection — practice prediction-testing before next session (stated) — 2026-08-24
-[cc-coach:networking-coach] user joins recurring activities but assumes people won't want to talk outside the structured time; normalize that weak-tie maintenance happens gradually (stated) — 2026-08-24
-[cc-coach:networking-coach] user is rebuilding from isolation; started with one weekly volunteer commitment, had breakthrough moment when someone asked *them* for advice — don't push toward "doing more" yet, support deepening this one thread (stated) — 2026-08-24
+[cc-coach:networking-coach] user's liking gap is pronounced; they consistently interpret neutral responses as rejection — practice prediction-testing before next session (inferred) — 2026-08-24
+[cc-coach:networking-coach] user joins recurring activities but assumes people won't want to talk outside the structured time; normalize that weak-tie maintenance happens gradually (inferred) — 2026-08-24
+[cc-coach:networking-coach] user is rebuilding from isolation; started with one weekly volunteer commitment, had breakthrough moment when someone asked *them* for advice — don't push toward "doing more" yet, support deepening this one thread (inferred) — 2026-08-24
 ```

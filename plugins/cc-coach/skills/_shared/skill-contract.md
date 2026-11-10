@@ -51,7 +51,7 @@ register `/career-plan`'s output partway through."`
 for future sessions to recall) or write a session summary to
 context/<skill-name>-session-<date>.md (for you to revisit, not auto-loaded by
 other skills). Which, or neither?"`
-   2. If **learnings**: read `learnings-protocol.md` in this `_shared/` folder and record the observation per its **Writing** section, tagged `[cc-coach:<skill-name>]` with source `stated` (the user chose to save it), then follow its **Confirming** section.
+   2. If **learnings**: read `learnings-protocol.md` in this `_shared/` folder and record the observation per its **Writing** section, tagged `[cc-coach:<skill-name>]` with source `stated` when the user's own words carry the content (a preference, rule or decision they voiced), or `inferred` when you drew the conclusion from the conversation and the user only agreed to save it (agreeing to save is not stating a rule). Coaching skills have no separate feedback step, so follow the protocol's **Confirming** section right after writing.
    3. If **session summary**: write to `context/<skill-name>-session-<YYYY-MM-DD>.md`
       with a collision-check suffix (`-2`, `-3`, ...) if that exact date's file
       already exists. Do **not** register it in the `## Context files` table — it's

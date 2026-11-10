@@ -135,8 +135,8 @@ Never overwrite silently, because the project's copy may have been customized. T
 ```bash
 mkdir -p .claude/skills/<domain-name>
 mkdir -p .claude/skills/_shared
-cp -n "${CLAUDE_SKILL_DIR}/../_shared/skill-contract.md" .claude/skills/_shared/
-cp -n "${CLAUDE_SKILL_DIR}/../_shared/learnings-protocol.md" .claude/skills/_shared/
+[ -e .claude/skills/_shared/skill-contract.md ] || cp "${CLAUDE_SKILL_DIR}/../_shared/skill-contract.md" .claude/skills/_shared/
+[ -e .claude/skills/_shared/learnings-protocol.md ] || cp "${CLAUDE_SKILL_DIR}/../_shared/learnings-protocol.md" .claude/skills/_shared/
 ```
 
 `${CLAUDE_SKILL_DIR}` is the directory of this `SKILL.md`; if it stays literal or empty because another skill read this file instead of invoking it, use the directory of this file instead (the `_shared` folder is its sibling). Write the resulting absolute path into the command itself; never assign it to a shell variable first, because a command that starts with an assignment matches no permission rule and gets refused.
@@ -238,7 +238,7 @@ Required skill steps — write each as a level-2 heading, following the shape of
 - **Step 5: Session-wrap save-prompt** — reference the contract's save-prompt
   directly, with tag `[cc-coach:<domain-name>]` and
   `context/<domain-name>-session-<YYYY-MM-DD>.md`, plus two example learnings
-  entries specific to this domain, each marked `(stated)`, the only source the save-prompt records.
+  entries specific to this domain: one marked `(stated)` (the user's own words carry the content) and one marked `(inferred)` (the coach drew the conclusion and the user only agreed to save it), as the contract's save-prompt records them.
 
 **Then verify the draft against these non-negotiables, and fix every violation
 before writing the file:**
