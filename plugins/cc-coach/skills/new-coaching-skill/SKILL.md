@@ -17,6 +17,8 @@ areas a coaching skill needs, synthesizes a `coaching-framework.md` shared refer
 and generates a `SKILL.md` skeleton ready for customization — following the
 conversational shape every cc-coach skill uses (see `../_shared/skill-contract.md`).
 
+Re-running `/new-coaching-skill` in end-user mode also checks the project's shared copies of the contract and the learnings protocol against the plugin's and offers to refresh outdated ones.
+
 ## Step 0: Recall learnings
 
 Read `../_shared/learnings-protocol.md` and follow its **Recall** section. Apply entries such as prior skill-creation observations or project-level defaults that would affect how this skill is structured.
@@ -120,7 +122,15 @@ For each gap, ask once:
 
 Create the skill folder.
 
-**End-user mode:**
+**End-user mode:** first check the shared copies from an earlier run. The copy below happens once, so plugin updates never reach a project on their own. If `.claude/skills/_shared/skill-contract.md` or `.claude/skills/_shared/learnings-protocol.md` already exists, compare its `_Last updated: YYYY-MM-DD_` line (line 3) with the plugin's copy at `${CLAUDE_SKILL_DIR}/../_shared/<file>`. A project copy without that line counts as older. Identical dates say nothing. If the plugin's copy is newer, ask per file:
+
+> "Your project's copy of `<file>` (last updated <project-date-or-'unknown'>) is older than the plugin's version (last updated <plugin-date>). Refresh it with the plugin's version? This overwrites any local edits to the file. (refresh / keep / show diff)"
+
+- **show diff**: run `diff .claude/skills/_shared/<file> "${CLAUDE_SKILL_DIR}/../_shared/<file>"`, show the output, then re-ask refresh or keep.
+- **refresh**: copy the plugin's file over the project's copy and confirm in one line.
+- **keep**: leave the file as it is; it will ask again the next time this skill runs in end-user mode.
+
+Never overwrite silently, because the project's copy may have been customized. Then create the folders and copy only the files that are still missing:
 
 ```bash
 mkdir -p .claude/skills/<domain-name>
@@ -128,6 +138,8 @@ mkdir -p .claude/skills/_shared
 cp -n "${CLAUDE_SKILL_DIR}/../_shared/skill-contract.md" .claude/skills/_shared/
 cp -n "${CLAUDE_SKILL_DIR}/../_shared/learnings-protocol.md" .claude/skills/_shared/
 ```
+
+`${CLAUDE_SKILL_DIR}` is the directory of this `SKILL.md`; if it stays literal or empty because another skill read this file instead of invoking it, use the directory of this file instead (the `_shared` folder is its sibling). Write the resulting absolute path into the command itself; never assign it to a shell variable first, because a command that starts with an assignment matches no permission rule and gets refused.
 
 **Plugin-dev mode:** the shared contract already exists in the repo at
 `plugins/cc-coach/skills/_shared/skill-contract.md`. Only create the new skill

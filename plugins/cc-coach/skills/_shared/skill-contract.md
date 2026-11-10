@@ -1,5 +1,7 @@
 # cc-coach Skill Contract — Shared Reference
 
+_Last updated: 2026-11-10_
+
 Every cc-coach skill follows the same step sequence. A SKILL.md **references this
 file** rather than restating the sequence — this is the single source of truth, so
 the steps cannot drift skill to skill. A coaching skill is a live, multi-turn
