@@ -1,10 +1,12 @@
 # cc-coach
 
-A Claude Code plugin bundling live-coaching skills across job-related and
-personal-life domains.
+A Claude Code plugin bundling live-coaching skills across job-related and personal-life domains.
 
-Status: v1 skills implemented and registered in the marketplace catalog. See
-`docs/superpowers/specs/2026-08-18-cc-coach-design.md` for the design.
+Status: v1 skills implemented and registered in the marketplace catalog. See `docs/superpowers/specs/2026-08-18-cc-coach-design.md` for the design.
+
+## Commands
+
+- Test the pre-commit stamping script: `bash tests/stamp-shared-files/test.sh`
 
 ## Key Config Files
 
@@ -32,17 +34,13 @@ Status: v1 skills implemented and registered in the marketplace catalog. See
 
 ## References
 
-`docs/superpowers/specs/2026-08-18-cc-coach-design.md` — **Read when:** planning or
-implementing skills for this plugin
+`docs/superpowers/specs/2026-08-18-cc-coach-design.md` — **Read when:** planning or implementing skills for this plugin
 
 ## Conventions
 
 - Follow the [cc-plugin-repo-guideline](https://github.com/clever-cc-plugins/marketplace/blob/main/docs/cc-plugin-repo-guideline.md) for all structural decisions
 - Skill names match their directory name (kebab-case)
-- A cc-coach skill never requires a sibling plugin (cc-career, cc-concept, ...) to be
-  installed — it ships a generic domain framework as baseline and opportunistically
-  enriches from that sibling plugin's context files when registered. See the design
-  doc for the full rationale.
+- A cc-coach skill never requires a sibling plugin (cc-career, cc-concept, ...) to be installed — it ships a generic domain framework as baseline and opportunistically enriches from that sibling plugin's context files when registered. See the design doc for the full rationale.
 
 ## Don't
 
@@ -53,11 +51,10 @@ implementing skills for this plugin
 
 ## Learnings
 
-When the user corrects a mistake or points out a recurring issue, record a one-line
-summary in `.claude/learnings.md` by `plugins/cc-coach/skills/_shared/learnings-protocol.md`: add a source marker, and replace a contradicted entry instead of appending a second one. Don't modify `CLAUDE.md` directly.
+When the user corrects a mistake or points out a recurring issue, record a one-line summary in `.claude/learnings.md` by `plugins/cc-coach/skills/_shared/learnings-protocol.md`: add a source marker, and replace a contradicted entry instead of appending a second one. Don't modify `CLAUDE.md` directly.
 
 ## Compact Instructions
 
 When compacting, preserve: list of modified files, current test status, open TODOs, and key decisions made.
 
-<!-- cc-config: last-optimize-run: 2026-11-05 8e926b583356ce158c970689cd537be077ca7123 -->
+<!-- cc-config: last-optimize-run: 2026-11-12 fc7b141c14d0df3d19d298d5a5ee400feed881e7 -->
